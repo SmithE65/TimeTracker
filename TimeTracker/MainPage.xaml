@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TimeTracker.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Picker
+                x:Name="taskPicker"
+                Title="Task"
+                MinimumWidthRequest="150"
+                MaximumWidthRequest="350"
+                WidthRequest="350"
+                >
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Task A</x:String>
+                        <x:String>Task B</x:String>
+                        <x:String>Task C</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Button 
+                x:Name="startButton"
+                Text="Start"
+                MaximumWidthRequest="350"
+                />
+
+            <Button 
+                x:Name="startFromButton"
+                Text="Start From"
+                MaximumWidthRequest="350"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
